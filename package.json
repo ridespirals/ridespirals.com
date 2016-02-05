@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "moment": "2.3.x",
+    "lodash": "^3.x",
+    "typogr": "0.5.x"
+  },
+  "private": "true"
+}
