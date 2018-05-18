@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0040)http://members.shaw.ca/stevejobber/doug/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Dr Doug Beach Health And Wellness Plan</title>
+
+<script language="JavaScript">
+page=0;
+maxpage=185;
+function index() {
+	page=222;
+	showPage();
+}
+function prev() {
+	page-=2;
+	if (page<0) page=0;
+		showPage();
+}
+function next() {
+	page+=2;
+	if (page>maxpage) page=maxpage;
+		showPage();
+}
+function gotor() {
+	if ((parseInt(document.getElementById("left").value)%2)==0) page=parseInt(document.getElementById("left").value);
+	else page=parseInt(document.getElementById("left").value)-1;
+	if (page>maxpage) page=maxpage;
+	if (page<0) page=0;
+	page=parseInt(page);
+	showPage();
+}
+function first() {
+	page=0;
+	showPage();
+}
+function last() {
+	page=162;
+	showPage();
+}
+function index() {
+	page=6;
+	showPage();
+}
+function showPage() {
+	document.getElementById("left").value=page;
+	document.getElementById("right").value=page+1;
+	document.getElementById("frm0").src="Page" + page + ".html";
+	document.getElementById("frm1").src="Page" + (page+1) + ".html";
+}
+</script>
+</head>
+<body topmargin="1"><div align="center">
+<iframe id="frm0" frameborder="0" marginheight="0" marginwidth="0" hspace="0" vspace="0" height="585" width="480" style="overflow:hidden;" scrolling="no" src="./Page0.htm"></iframe>
+<iframe id="frm1" frameborder="0" marginheight="0" marginwidth="0" hspace="0" vspace="0" height="585" width="480" style="overflow:hidden;" scrolling="no" src="./Page1.htm"></iframe>
+</div>
+<div align="center"><a href="javascript:gotor();">Goto Page</a> <input id="left" type="text" size="2"> &amp; <input disabled="" id="right" type="text" size="2" readonly="true">
+  - <a href="javascript:first();">FIRST</a> - <a href="javascript:prev();">&lt;&lt; 
+  BACK</a> - <a href="javascript:index();">INDEX</a> - <a href="javascript:next();">NEXT &gt;&gt;</a> - <a href="javascript:last();">LAST</a> - <a href="http://www.gzstorm.com/">http://www.gzstorm.com</a></div>
+<script language="JavaScript">
+showPage();
+</script>
+
+
+</body><link rel="stylesheet" type="text/css" href="data:text/css,"></html>
